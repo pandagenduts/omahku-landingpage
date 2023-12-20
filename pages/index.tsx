@@ -1,13 +1,15 @@
 import ClientSection from "@/components/home/ClientSection";
 import FeaturedSection from "@/components/home/FeaturedSection";
-import HeroSection from "@/components/home/HeroSection";
+import HeroBottom from "@/components/home/hero-section/HeroBottom";
+import HeroTop from "@/components/home/hero-section/HeroTop";
 import TestiSection from "@/components/home/TestiSection";
 import ValueSection from "@/components/home/ValueSection";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <HeroTop />
+      <HeroBottom />
       {/* <ClientSection />
       <ValueSection />
       <FeaturedSection />
