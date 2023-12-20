@@ -15,6 +15,7 @@ export default function ClientSection() {
             width={logo.width}
             height={logo.height}
             className={`object-contain company-logo ${logo.company}`}
+            key={logo.company}
           />
         ))}
       </div>

@@ -13,7 +13,7 @@ export default function Home() {
       <ClientSection />
       <ValueSection />
       <FeaturedSection />
-      {/* <TestiSection /> */}
+      <TestiSection />
     </>
   )
 }

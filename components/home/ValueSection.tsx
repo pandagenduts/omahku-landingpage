@@ -1,21 +1,20 @@
 import { homeStatisticsValues } from '@/lib/config'
 import { ValueStatistics } from '@/lib/types'
 import { Building3, StatusUp, Messages2 } from 'iconsax-react'
+import Pill from '../ui/pill'
 
 export default function ValueSection() {
   return (
     <section className='container mb-[81px] flex flex-col gap-[54px] md:gap-12 md:mb-[142px] md:flex-row'>
       <div className='flex-1 flex flex-col items-center md:items-start'>
-        <div className='bg-secBlue1 text-mainBlue mb-7 inline-block w-auto rounded-full px-6 py-4 text-sm font-medium'>
-          Why Choose Omahku
-        </div>
+        <Pill>Why Choose Omahku</Pill>
         <h2 className='mb-11 text-center md:mb-[76px] md:text-left'>
           We are Committed to Providing Exceptional Service and Support to All
           Our Clients.
         </h2>
         <div className='flex w-full flex-col items-center justify-between gap-6 md:max-w-[513px] md:flex-row'>
           {homeStatisticsValues?.map((value) => (
-            <Statistics number={value.number} text={value.text} />
+            <Statistics number={value.number} text={value.text} key={value.text} />
           ))}
         </div>
       </div>
