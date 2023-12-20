@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
  
+:root {
+  --main-blue: #2276C5;
+  --main-gray: #2D2D2D;
+  --main-white: #FDFDFD;
+  --sec-gray1: #A0A2B6;
+  --sec-gray2: #9496A5;
+  --sec-gray3: #6E6F7C;
+  --sec-gray4: #3E3E3E;
+}
+
+html {
+  font-size: 16px;
+}
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 99%;
+    --foreground: 0 0% 18%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -13,11 +27,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
  
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 204 74% 43%;
     --primary-foreground: 210 40% 98%;
  
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 99%;
+    --secondary-foreground: 204 74% 43%;
  
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -85,4 +99,8 @@ h2 {
 
 h3 {
   @apply text-base font-semibold
+}
+
+h4 {
+  @apply font-semibold
 }
