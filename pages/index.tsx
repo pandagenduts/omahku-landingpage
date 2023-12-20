@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <HeroTop />
       <HeroBottom />
-      {/* <ClientSection />
-      <ValueSection />
+      <ClientSection />
+      {/* <ValueSection />
       <FeaturedSection />
       <TestiSection /> */}
     </>

@@ -1,6 +1,6 @@
 export default function ClientSection() {
   return (
-    <section>
+    <section className="container">
       <p>Trusted by Multinational Companies</p>
     </section>
   )
