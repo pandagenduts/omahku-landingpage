@@ -90,7 +90,8 @@ export const socialMedias = [
   },
 ]
 
-//Homepage: Client Section: Company Logos
+// Homepage
+// Client Section: Company Logos
 export const homeClientsCompanyLogo = [
   {
     company: 'company-1',
@@ -127,5 +128,21 @@ export const homeClientsCompanyLogo = [
     src: '/company-6.png',
     width: 118,
     height: 37,
+  },
+]
+
+//Value Section: Statistics Values
+export const homeStatisticsValues = [
+  {
+    number: 6300,
+    text: 'House Sold Out',
+  },
+  {
+    number: 1500,
+    text: 'Apartment Rented',
+  },
+  {
+    number: 7800,
+    text: 'Happy Customer',
   },
 ]

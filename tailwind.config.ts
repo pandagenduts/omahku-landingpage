@@ -64,6 +64,8 @@ module.exports = {
         mainBlue: 'var(--main-blue)',
         mainGray: 'var(--main-gray)',
         mainWhite: 'var(--main-white)',
+        secBlue1: 'var(--sec-blue1)',
+        secBlue2: 'var(--sec-blue2)',
         secGray1: 'var(--sec-gray1)',
         secGray2: 'var(--sec-gray2)',
         secGray3: 'var(--sec-gray3)',

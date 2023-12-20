@@ -6,6 +6,8 @@
   --main-blue: #2276c5;
   --main-gray: #2d2d2d;
   --main-white: #fdfdfd;
+  --sec-blue1: #edf6fe;
+  --sec-blue2: #fafafd;
   --sec-gray1: #a0a2b6;
   --sec-gray2: #9496a5;
   --sec-gray3: #6e6f7c;
@@ -94,7 +96,7 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl font-bold md:text-4xl;
+  @apply text-2xl !leading-[133%] font-bold md:text-4xl;
 }
 
 h3 {
