@@ -12,8 +12,8 @@ export default function Home() {
       <HeroBottom />
       <ClientSection />
       <ValueSection />
-      {/* <FeaturedSection />
-      <TestiSection /> */}
+      <FeaturedSection />
+      {/* <TestiSection /> */}
     </>
   )
 }

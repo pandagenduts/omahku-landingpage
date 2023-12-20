@@ -70,6 +70,7 @@ module.exports = {
         secGray2: 'var(--sec-gray2)',
         secGray3: 'var(--sec-gray3)',
         secGray4: 'var(--sec-gray4)',
+        secGray5: 'var(--sec-gray5)',
       },
       borderRadius: {
         lg: 'var(--radius)',
