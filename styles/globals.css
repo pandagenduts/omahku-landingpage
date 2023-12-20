@@ -90,7 +90,7 @@ html {
 }
 
 h1 {
-  @apply text-4xl md:text-[3.25rem] leading-[4.5rem] font-bold
+  @apply text-4xl leading-[50px] md:text-[3.25rem] md:leading-[4.5rem] font-bold
 }
 
 h2 {

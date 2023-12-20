@@ -21,7 +21,9 @@ module.exports = {
       fontFamily: {
         inter: ['var(--font-inter)', ...fontFamily.sans],
       },
-      boxShadow: {},
+      boxShadow: {
+        custShadow1: '0px -10px 20px 0px rgba(45, 45, 45, 0.05)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
