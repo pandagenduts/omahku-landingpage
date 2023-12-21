@@ -117,7 +117,7 @@ h4 {
 }
 
 #testimonials #swiper-container .swiper {
-  overflow-x: visible;
+  overflow: visible;
 }
 
 #testimonials #swiper-container .swiper-slide {
