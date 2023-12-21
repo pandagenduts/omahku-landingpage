@@ -15,7 +15,6 @@ export default function FooterBottom() {
     <section className='bg-mainGray py-10 md:pb-[128px] md:pt-[86px] text-mainWhite'>
       <div className='container flex flex-col justify-between md:flex-row md:gap-4'>
         <div className='mb-10 flex w-full max-w-[295px] flex-col gap-4 md:m-0 md:max-w-[195px] md:gap-6 lg:max-w-[295px]'>
-          {/* <p>Logo</p> */}
           <Link href='/'>
             <Image
               src='/logo-white.svg'

@@ -15,15 +15,19 @@ export default function FeaturedSection(props: FeaturedSectionProps) {
   const { featuredHouses } = props
 
   return (
-    <section id='featured' className='mx-auto mb-[72px] flex w-full max-w-[1248px] flex-col items-center overflow-hidden bg-secGray5 px-[50px] py-12 md:mb-14 xl:rounded-xl'>
+    <section
+      id='featured'
+      className='mx-auto mb-[72px] flex w-full max-w-[1248px] flex-col items-center overflow-hidden bg-secGray5 px-5 py-12 md:mb-14 md:px-[50px] xl:rounded-xl'
+    >
       <div className='w-full max-w-[930px]'>
-        <h2 className='mb-4 text-center'>Featured House You Would Like</h2>
+        <h2 className='max-w-[220px] mx-auto min-[500px]:max-w-none mb-4 text-center'>Featured House You Would Like</h2>
         <p className='mb-14 text-center text-secGray2'>
           Our agency has access to a wide range of property listings, including
           off-market properties and exclusive listings that may not be available
           to the general public.
         </p>
       </div>
+
       <div id='swiper-container' className='mb-8 w-full'>
         <Swiper
           spaceBetween={20}
@@ -41,7 +45,7 @@ export default function FeaturedSection(props: FeaturedSectionProps) {
           ))}
         </Swiper>
       </div>
-      <Button variant='secondary' className='border border-mainBlue'>
+      <Button variant='secondary' className='w-full md:w-auto border border-mainBlue'>
         See More
       </Button>
     </section>
