@@ -12,10 +12,10 @@ export default function FooterTop() {
           achieve your real estate investment goals.
         </p>
         <div className='flex flex-col justify-center gap-4 sm:flex-row'>
-          <Button className='px-6'>
+          <Button className='px-6 h-[54px]'>
             <p>Schedule Consultation</p>
           </Button>
-          <Button variant='secondary' className='px-6'>
+          <Button variant='secondary' className='px-6 h-[54px]'>
             Learn More
           </Button>
         </div>

@@ -45,7 +45,7 @@ export default function FeaturedSection(props: FeaturedSectionProps) {
           ))}
         </Swiper>
       </div>
-      <Button variant='secondary' className='w-full md:w-auto border border-mainBlue'>
+      <Button variant='secondary' className='w-full md:w-auto border border-mainBlue h-[54px]'>
         See More
       </Button>
     </section>

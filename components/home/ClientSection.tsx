@@ -4,8 +4,12 @@ import Image from 'next/image'
 export default function ClientSection() {
   return (
     <section className='container mb-[74px] md:mb-[124px]'>
-      <p className='text-secGray2 mb-9 text-center text-base font-medium'>
+      <p className='mb-9 hidden text-center text-sm font-medium text-secGray2 md:block md:text-base'>
         Trusted by Multinational Companies
+      </p>
+      <p className='mb-9 text-center text-sm font-medium text-secGray2 md:hidden md:text-base'>
+        Trusted by
+        <br /> Multinational Companies
       </p>
       <div className='flex flex-wrap justify-center gap-[40px] md:gap-[52px]'>
         {homeClientsCompanyLogo?.map((logo) => (
@@ -14,7 +18,7 @@ export default function ClientSection() {
             alt={logo.company}
             width={logo.width}
             height={logo.height}
-            className={`object-contain company-logo ${logo.company}`}
+            className={`company-logo object-contain ${logo.company}`}
             key={logo.company}
           />
         ))}

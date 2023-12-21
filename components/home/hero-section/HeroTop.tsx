@@ -13,8 +13,8 @@ export default function HeroTop() {
           meets all your needs and exceeds your expectations.
         </p>
         <div className='mx-auto flex w-full max-w-[462px] flex-col justify-center gap-4 sm:flex-row'>
-          <Button className='w-full'>Get Started</Button>
-          <Button variant='secondary' className='border-mainBlue w-full border'>
+          <Button className='w-full h-[54px]'>Get Started</Button>
+          <Button variant='secondary' className='border-mainBlue w-full border h-[54px]'>
             Schedule Consultation
           </Button>
         </div>
