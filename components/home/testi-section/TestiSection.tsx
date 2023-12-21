@@ -1,8 +1,5 @@
 import Pill from '../../ui/pill'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import { homeTestimonials } from '@/lib/config'
-import { TestiCard } from './TestiCard'
+import TestiSlider from './TestiSlider'
 
 export default function TestiSection() {
   return (
@@ -26,23 +23,7 @@ export default function TestiSection() {
           </p>
         </div>
 
-        <div id='swiper-container'>
-          <Swiper
-            spaceBetween={36}
-            breakpoints={{
-              768: {
-                slidesPerView: 'auto',
-              },
-            }}
-            slidesPerView={1}
-          >
-            {homeTestimonials?.map((testi, index) => (
-              <SwiperSlide key={index}>
-                <TestiCard key={testi.name} data={testi} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        <TestiSlider />
       </div>
     </section>
   )

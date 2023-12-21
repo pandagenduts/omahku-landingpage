@@ -124,6 +124,11 @@ h4 {
   width: auto !important;
 }
 
+#testimonials #swiper-container .swiper-button-prev,
+#testimonials #swiper-container .swiper-button-next {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .company-logo.company-1 {
     max-width: 54px;
