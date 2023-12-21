@@ -1,11 +1,14 @@
-import HeroBottom from "@/components/home/hero-section/HeroBottom";
-import HeroTop from "@/components/home/hero-section/HeroTop";
-import ClientSection from "@/components/home/ClientSection";
-import ValueSection from "@/components/home/ValueSection";
-import FeaturedSection from "@/components/home/featured-section/FeaturedSection";
-import TestiSection from "@/components/home/testi-section/TestiSection";
+import HeroBottom from '@/components/home/hero-section/HeroBottom'
+import HeroTop from '@/components/home/hero-section/HeroTop'
+import ClientSection from '@/components/home/ClientSection'
+import ValueSection from '@/components/home/ValueSection'
+import FeaturedSection from '@/components/home/featured-section/FeaturedSection'
+import TestiSection from '@/components/home/testi-section/TestiSection'
+import { FeaturedHouse } from '@/lib/types'
 
-export default function Home({featuredHouses}: any) {
+export default function Home(props: { featuredHouses: FeaturedHouse[] }) {
+  const { featuredHouses } = props
+
   return (
     <>
       <HeroTop />
