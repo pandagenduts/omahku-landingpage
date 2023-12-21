@@ -28,17 +28,18 @@ export function HouseCard(props: HouseCardProps) {
           <Location size='16' color='#9496A5' className='mr-[6px]' /> {location}
         </span>
         <p className='mb-4 text-2xl font-bold'>{`$${price}.000`}</p>
-        <div className='flex flex-wrap gap-y-3'>
-          <span className='flex items-center gap-[6px]'>
+
+        <div className='flex gap-[14px] flex-wrap md:flex-nowrap gap-y-3'>
+          <span className='flex items-center gap-1 whitespace-nowrap'>
             <TbViewportWide className='h-4 w-4' /> {description.size}
           </span>
-          <Separator orientation='vertical' className='mx-[14.5px] h-auto' />
-          <span className='flex items-center gap-[6px]'>
+          <Separator orientation='vertical' className='h-auto' />
+          <span className='flex items-center gap-1 whitespace-nowrap'>
             <MdOutlineBed className='h-4 w-4' />{' '}
             {`${description.bedroom} Bedroom`}
           </span>
-          <Separator orientation='vertical' className='mx-[14.5px] h-auto' />
-          <span className='flex items-center gap-[6px]'>
+          <Separator orientation='vertical' className='h-auto' />
+          <span className='flex items-center gap-1 whitespace-nowrap'>
             <LiaBathSolid className='h-4 w-4' />{' '}
             {`${description.bathroom} Bathroom`}
           </span>
