@@ -1,7 +1,7 @@
 // Config is made so if in the future the site want to be integrated with CMS, we can easily add them without hassle.
 
 // Header Menu
-export const heaederMenu = [
+export const headerMenu = [
   {
     title: 'Buy House',
     href: '/',
