@@ -23,6 +23,7 @@ module.exports = {
       },
       boxShadow: {
         custShadow1: '0px -10px 20px 0px rgba(45, 45, 45, 0.05)',
+        custShadow2: '0px 4px 20px 0px rgba(26, 26, 26, 0.15)',
       },
       backgroundImage: {
         custGradient1: 'linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.00) 50%)',

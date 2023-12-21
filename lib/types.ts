@@ -36,6 +36,6 @@ export type Testimonials = {
   testimonial: string
 }
 
-export type TestiCard = {
+export type TestiCardProps = {
   data: Testimonials
 }
