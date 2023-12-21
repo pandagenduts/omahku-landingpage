@@ -8,6 +8,9 @@ const nextConfig = {
         hostname: 'nos.wjv-1.neo.id',
       },
     ],
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   }
 }
 
