@@ -7,7 +7,7 @@ export default function FooterTop() {
         <h2 className='mb-4 text-center'>
           Don’t Need to Wait Start Invest Your Future From Now.
         </h2>
-        <p className='mb-12 text-center'>
+        <p className='mb-12 text-center text-secGray2'>
           Contact us to schedule a consultation and learn how we can help you
           achieve your real estate investment goals.
         </p>

@@ -78,15 +78,15 @@ export const footerMenuMore = [
 export const socialMedias = [
   {
     title: 'Facebook',
-    href: '/',
+    href: 'https://facebook.com',
   },
   {
     title: 'Instagram',
-    href: '/',
+    href: 'https://instagram.com',
   },
   {
     title: 'Youtube',
-    href: '/',
+    href: 'https://youtube.com',
   },
 ]
 
