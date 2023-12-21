@@ -146,3 +146,28 @@ export const homeStatisticsValues = [
     text: 'Happy Customer',
   },
 ]
+
+// Testimonial Section: Testimonials
+export const homeTestimonials = [
+  {
+    name: 'Fujiwara Sugiono',
+    picture: '/testi-1.png',
+    role: 'Buyer House at Ungaran',
+    testimonial:
+      '“Buying my first home was a dream come true. It was a great feeling to finally have a place that was truly my own, and I could make it into the perfect living space for me and my family."',
+  },
+  {
+    name: 'Sakura Hanazono',
+    picture: '/testi-2.png',
+    role: 'Buyer House at Bandungan',
+    testimonial:
+      '“Buying property was one of the best decisions I ever made. Not only did it give me a sense of security and stability, but it also proved to be a valuable investment in the long run.”',
+  },
+  {
+    name: 'Eren Novelza',
+    picture: '/testi-3.png',
+    role: 'Buyer House at Ungaran',
+    testimonial:
+      '“Owning property has allowed me to build equity and leverage it to finance other investments or pay off debt. It\'s a powerful financial tool that has helped me achieve my financial goals."',
+  },
+]

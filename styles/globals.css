@@ -109,8 +109,19 @@ h4 {
 }
 
 #swiper-container .swiper-slide {
-  width: auto !important;
   cursor: grab;
+}
+
+#featured #swiper-container .swiper-slide {
+  width: auto !important;
+}
+
+#testimonials #swiper-container .swiper {
+  overflow-x: visible;
+}
+
+#testimonials #swiper-container .swiper-slide {
+  width: auto !important;
 }
 
 @media (max-width: 767px) {
@@ -136,5 +147,9 @@ h4 {
 
   .company-logo.company-6 {
     max-width: 67px;
+  }
+
+  #testimonials #swiper-container .swiper-slide {
+    width: 100% !important;
   }
 }

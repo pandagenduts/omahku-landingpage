@@ -15,7 +15,7 @@ export default function FeaturedSection(props: FeaturedSectionProps) {
   const { featuredHouses } = props
 
   return (
-    <section className='mx-auto mb-[72px] flex w-full max-w-[1248px] flex-col items-center overflow-hidden bg-secGray5 px-[50px] py-12 md:mb-14 xl:rounded-xl'>
+    <section id='featured' className='mx-auto mb-[72px] flex w-full max-w-[1248px] flex-col items-center overflow-hidden bg-secGray5 px-[50px] py-12 md:mb-14 xl:rounded-xl'>
       <div className='w-full max-w-[930px]'>
         <h2 className='mb-4 text-center'>Featured House You Would Like</h2>
         <p className='mb-14 text-center text-secGray2'>

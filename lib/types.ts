@@ -27,3 +27,15 @@ export type FeaturedSectionProps = {
 export type HouseCardProps = {
   data: FeaturedHouse
 }
+
+// Testimonial Section
+export type Testimonials = {
+  name: string
+  picture: string
+  role: string
+  testimonial: string
+}
+
+export type TestiCard = {
+  data: Testimonials
+}
