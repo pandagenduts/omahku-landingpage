@@ -108,11 +108,12 @@ h4 {
   @apply font-semibold;
 }
 
-/* .featured-image {
-  height: revert-layer;
-} */
+#swiper-container .swiper-slide {
+  width: auto !important;
+  cursor: grab;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .company-logo.company-1 {
     max-width: 54px;
   }
@@ -136,4 +137,8 @@ h4 {
   .company-logo.company-6 {
     max-width: 67px;
   }
+
+  /* #swiper-container .swiper-slide {
+    margin-right: 20px !important;
+  } */
 }

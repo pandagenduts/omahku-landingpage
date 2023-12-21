@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { FeaturedSectionProps, HouseCardProps } from '@/lib/types'
 import { Button } from '../ui/button'
@@ -6,6 +8,8 @@ import { Location } from 'iconsax-react'
 import { TbViewportWide } from 'react-icons/tb'
 import { MdOutlineBed } from 'react-icons/md'
 import { LiaBathSolid } from 'react-icons/lia'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
 
 export default function FeaturedSection(props: FeaturedSectionProps) {
   const { featuredHouses } = props
@@ -20,10 +24,22 @@ export default function FeaturedSection(props: FeaturedSectionProps) {
           to the general public.
         </p>
       </div>
-      <div className='mb-8 flex gap-4'>
-        {featuredHouses?.map((house, index) => (
-          <HouseCard key={index} data={house} />
-        ))}
+      <div id='swiper-container' className='mb-8 w-full'>
+        <Swiper
+          spaceBetween={20}
+          breakpoints={{
+            768: {
+              spaceBetween: 43,
+            },
+          }}
+          slidesPerView='auto'
+        >
+          {featuredHouses?.map((house, index) => (
+            <SwiperSlide key={index}>
+              <HouseCard key={index} data={house} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <Button variant='secondary' className='border border-mainBlue'>
         See More
@@ -36,7 +52,7 @@ function HouseCard(props: HouseCardProps) {
   const { picture, price, description, model, location } = props.data
 
   return (
-    <div className='overflow-hidden rounded-xl bg-white'>
+    <div className='max-w-[257px] overflow-hidden rounded-xl bg-white md:max-w-[354px]'>
       <div className='relative'>
         <Image
           src={picture}
@@ -54,7 +70,7 @@ function HouseCard(props: HouseCardProps) {
           <Location size='16' color='#9496A5' className='mr-[6px]' /> {location}
         </span>
         <p className='mb-4 text-2xl font-bold'>{`$${price}.000`}</p>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap gap-y-3'>
           <span className='flex items-center gap-[6px]'>
             <TbViewportWide className='h-4 w-4' /> {description.size}
           </span>
