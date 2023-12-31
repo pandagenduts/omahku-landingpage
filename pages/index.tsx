@@ -5,12 +5,16 @@ import ValueSection from '@/components/home/ValueSection'
 import FeaturedSection from '@/components/home/featured-section/FeaturedSection'
 import TestiSection from '@/components/home/testi-section/TestiSection'
 import { FeaturedHouse } from '@/lib/types'
+import Head from 'next/head'
 
 export default function Home(props: { featuredHouses: FeaturedHouse[] }) {
   const { featuredHouses } = props
 
   return (
     <>
+      <Head>
+        <meta property='og:image' content='https://localhost:3000/api/og' />
+      </Head>
       <HeroTop />
       <HeroBottom />
       <ClientSection />
@@ -28,6 +32,6 @@ export async function getStaticProps() {
   const featuredHouses = await req.json()
 
   return {
-    props: { featuredHouses },
+    props: { featuredHouses: featuredHouses},
   }
 }
