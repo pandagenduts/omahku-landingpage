@@ -6,14 +6,19 @@ import FeaturedSection from '@/components/home/featured-section/FeaturedSection'
 import TestiSection from '@/components/home/testi-section/TestiSection'
 import { FeaturedHouse } from '@/lib/types'
 import Head from 'next/head'
+import { siteConfig } from '@/lib/config'
 
 export default function Home(props: { featuredHouses: FeaturedHouse[] }) {
+  const {ogImage, siteTitle, description} = siteConfig
   const { featuredHouses } = props
 
   return (
     <>
       <Head>
-        <meta property='og:image' content='https://localhost:3000/api/og' />
+        <title>{siteTitle}</title>
+        <meta name='description' content={description} />
+        <meta property="og:image:alt" content={description} />
+        <meta property='og:image' content={ogImage} />
       </Head>
       <HeroTop />
       <HeroBottom />

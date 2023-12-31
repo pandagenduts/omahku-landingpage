@@ -1,5 +1,13 @@
 // Config is made so if in the future the site want to be integrated with CMS, we can easily add them without hassle.
 
+// Site Config
+export const siteConfig = {
+  siteTitle: 'Omahku - Next JS',
+  description: 'Pixel-Perfect Next JS Site from Figma by: Donny Rendi',
+  url: 'https://omahku-landingpage.vercel.app/',
+  ogImage: 'https://omahku-landingpage.vercel.app/og-image.jpg',
+}
+
 // Header Menu
 export const headerMenu = [
   {
