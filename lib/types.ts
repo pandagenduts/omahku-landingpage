@@ -17,7 +17,6 @@ export type FeaturedHouse = {
   }
   model: string
   location: string
-  createdAt: string
 }
 
 export type FeaturedSectionProps = {

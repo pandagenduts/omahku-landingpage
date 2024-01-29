@@ -1,5 +1,7 @@
 // Config is made so if in the future the site want to be integrated with CMS, we can easily add them without hassle.
 
+import { FeaturedHouse } from './types'
+
 // Site Config
 export const siteConfig = {
   siteTitle: 'Omahku - Next JS',
@@ -152,6 +154,43 @@ export const homeStatisticsValues = [
   {
     number: 7800,
     text: 'Happy Customer',
+  },
+]
+
+// Featured Section: Featured Houses
+export const featuredHouses: FeaturedHouse[] = [
+  {
+    picture: '/house-1.jpg',
+    price: 40,
+    model: 'Modern',
+    location: 'Tembalang, Semarang',
+    description: {
+      bathroom: 1,
+      bedroom: 2,
+      size: '6x6m',
+    },
+  },
+  {
+    picture: '/house-2.jpg',
+    price: 60,
+    model: 'Scandinavian',
+    location: 'Pedurungan, Semarang',
+    description: {
+      bathroom: 2,
+      bedroom: 3,
+      size: '12x8m',
+    },
+  },
+  {
+    picture: '/house-3.jpg',
+    price: 50,
+    model: 'Classic',
+    location: 'Ungaran, Semarang',
+    description: {
+      bathroom: 2,
+      bedroom: 2,
+      size: '10x7m',
+    },
   },
 ]
 

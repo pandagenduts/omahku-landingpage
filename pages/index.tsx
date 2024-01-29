@@ -4,13 +4,12 @@ import ClientSection from '@/components/home/ClientSection'
 import ValueSection from '@/components/home/ValueSection'
 import FeaturedSection from '@/components/home/featured-section/FeaturedSection'
 import TestiSection from '@/components/home/testi-section/TestiSection'
-import { FeaturedHouse } from '@/lib/types'
+import { featuredHouses } from '@/lib/config'
 import Head from 'next/head'
 import { siteConfig } from '@/lib/config'
 
-export default function Home(props: { featuredHouses: FeaturedHouse[] }) {
+export default function Home() {
   const {ogImage, siteTitle, description} = siteConfig
-  const { featuredHouses } = props
 
   return (
     <>
@@ -28,15 +27,4 @@ export default function Home(props: { featuredHouses: FeaturedHouse[] }) {
       <TestiSection />
     </>
   )
-}
-
-export async function getStaticProps() {
-  const req = await fetch(
-    'https://mocki.io/v1/9d14be61-2ef1-4b2d-9246-3bf36e60687b',
-  )
-  const featuredHouses = await req.json()
-
-  return {
-    props: { featuredHouses: featuredHouses},
-  }
 }
